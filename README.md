@@ -1,1 +1,2 @@
 # sublimeDocs
+这个文件是本地sublime和Github网站同步的标识。

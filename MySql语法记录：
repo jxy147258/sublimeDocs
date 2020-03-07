@@ -1,0 +1,35 @@
+MySql语法记录：
+
+1,创建数据库
+create database <表名>; --->  create database tesing;
+高级用法：CREATE DATABASE IF NOT EXISTS “RUNOOB” DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+2,删除数据库
+drop database <数据库名>;  --->drop database tesing;
+
+
+3,创建表
+create table <表明> （列名1 属性1 属性2,列名2,列名3）
+--->create table users (id int primary uto_increment,name char)
+
+
+4,删除表
+drop table users;
+
+
+5,插入数据
+insert into <表名> values (列1值，列2值，列3值)
+--->insert into runoob_tbl values(10,'hah','getit','2020-03-07')
+
+6,查询数据表：
+SELECT column_name,column_name FROM table_name [WHERE Clause] [LIMIT N][ OFFSET M]
+
+
+7,更新数据表：
+UPDATE table_name SET field1=new-value1, field2=new-value2 [WHERE Clause]
+--->update runoob_tbl set runoob_title = 'gotit' where runoob_title='getit'
+
+8,删除数据：
+DELETE FROM table_name [WHERE Clause] 
+---> delete from runoob_tbl where id = 30;
+
